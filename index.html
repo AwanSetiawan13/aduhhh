@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0b3d34" />
+  <meta name="description"
+    content="Media belajar interaktif tentang jalur lengkung refleks, sistem saraf simpatis dan parasimpatis, serta kelainan sistem saraf." />
+  <title>Memahami Sistem Saraf — Media Belajar Interaktif</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body>
+  <div class="scroll-progress" aria-hidden="true"><span id="scrollProgress"></span></div>
+
+  <header class="site-header" id="top">
+    <div class="nav-wrap container">
+      <a class="brand" href="#top" aria-label="Kembali ke atas">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48" role="img">
+            <path
+              d="M16 9c5-7 15-5 17 2 7-1 11 7 7 12 5 5 1 14-6 14-3 5-11 4-13 0-7 2-12-5-9-10-5-4-3-13 4-15-2-5 1-12 8-13Z" />
+            <path d="M24 7v34M15 16c5 0 9 3 9 8M33 14c-5 1-9 4-9 10M13 29c6-2 11 1 11 7M35 28c-7-2-11 2-11 8" />
+          </svg>
+        </span>
+        <span><strong>NeuroLearn</strong><small>Sistem Saraf</small></span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Buka navigasi" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav" aria-label="Navigasi utama">
+        <a href="#refleks">Lengkung Refleks</a>
+        <a href="#otonom">Simpatis & Parasimpatis</a>
+        <a href="#kelainan">Kelainan Saraf</a>
+        <a href="#ringkasan" class="nav-cta">Ringkasan</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-grid container">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span></span> MEDIA BELAJAR BIOLOGI</div>
+          <h1>Memahami peran <em>Sistem Saraf</em> dengan cara yang lebih visual.</h1>
+          <p class="hero-lead">Jelajahi jalur refleks spinal dan kranial, pahami perbedaan simpatis dan parasimpatis,
+            lalu kenali empat kelainan sistem saraf dalam satu pengalaman belajar yang ringkas dan interaktif.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#refleks">Mulai eksplorasi <span>→</span></a>
+            <a class="btn btn-secondary" href="#kelainan">Lihat kelainan saraf</a>
+          </div>
+          <div class="hero-stats" aria-label="Ringkasan materi">
+            <div><strong>31</strong><span>pasang saraf spinal</span></div>
+            <div><strong>12</strong><span>pasang saraf kranial</span></div>
+            <div><strong>4</strong><span>kelainan dibahas</span></div>
+          </div>
+        </div>
+
+        <div class="neuro-visual reveal" aria-label="Ilustrasi jaringan saraf">
+          <div class="glow glow-a"></div>
+          <div class="glow glow-b"></div>
+          <svg class="neural-map" viewBox="0 0 620 560" aria-hidden="true">
+            <defs>
+              <linearGradient id="lineG" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#c8ffdf" />
+                <stop offset="1" stop-color="#f4c34f" />
+              </linearGradient>
+              <filter id="soft">
+                <feGaussianBlur stdDeviation="5" />
+              </filter>
+            </defs>
+            <g class="links" fill="none" stroke="url(#lineG)" stroke-width="2">
+              <path d="M65 104C160 120 165 220 272 209S381 69 530 114" />
+              <path d="M72 399C155 328 208 377 280 305S420 278 544 366" />
+              <path d="M157 55C174 172 272 180 280 305S203 458 314 507" />
+              <path d="M530 114C469 178 520 258 544 366" />
+              <path d="M272 209C324 228 354 265 412 261" />
+              <path d="M280 305C332 313 359 292 412 261" />
+            </g>
+            <g class="nodes">
+              <circle cx="65" cy="104" r="7" />
+              <circle cx="157" cy="55" r="10" />
+              <circle cx="272" cy="209" r="13" />
+              <circle cx="412" cy="261" r="9" />
+              <circle cx="530" cy="114" r="11" />
+              <circle cx="72" cy="399" r="8" />
+              <circle cx="280" cy="305" r="16" />
+              <circle cx="544" cy="366" r="12" />
+              <circle cx="314" cy="507" r="9" />
+            </g>
+            <g class="pulses">
+              <circle cx="272" cy="209" r="23" />
+              <circle cx="280" cy="305" r="28" />
+              <circle cx="544" cy="366" r="22" />
+            </g>
+          </svg>
+          <div class="brain-card card-1"><span class="mini-dot"></span><b>Refleks</b><small>Respons cepat &
+              otomatis</small></div>
+          <div class="brain-card card-2"><span class="mini-dot gold"></span><b>Otonom</b><small>Fight / flight ↔ rest /
+              digest</small></div>
+          <div class="brain-card card-3"><span class="mini-dot blue"></span><b>Integrasi</b><small>Sumsum tulang
+              belakang & batang otak</small></div>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#refleks" aria-label="Gulir ke materi"><span></span>Gulir untuk belajar</a>
+    </section>
+
+    <section class="section section-reflex" id="refleks">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div><span class="section-no">01</span><span class="eyebrow-label">Lengkung Refleks</span></div>
+          <h2>Jalur saraf cepat untuk tindakan perlindungan tubuh.</h2>
+          <p>Lengkung refleks adalah respons cepat dan otomatis. Materi membahas dua jalur: refleks saraf spinal dan
+            refleks saraf kranial.</p>
+        </div>
+
+        <div class="tab-shell reveal">
+          <div class="tab-list" role="tablist" aria-label="Jenis refleks">
+            <button class="tab-btn active" role="tab" aria-selected="true" data-tab="spinal"><span>01</span> Refleks
+              Spinal</button>
+            <button class="tab-btn" role="tab" aria-selected="false" data-tab="cranial"><span>02</span> Refleks
+              Kranial</button>
+          </div>
+
+          <article class="tab-panel active" id="panel-spinal" data-panel="spinal">
+            <div class="tab-copy">
+              <span class="pill">MEDULA SPINALIS</span>
+              <h3>Refleks Saraf Spinal</h3>
+              <p>Diproses langsung di <strong>sumsum tulang belakang (Medula Spinalis)</strong> dan mengontrol
+                <strong>31 pasang saraf spinal</strong> (Servikalis, Brakialis, Lumbalis, Sakralis).
+              </p>
+              <div class="flow-line" aria-label="Alur refleks spinal">
+                <div><b>01</b><span>Reseptor</span></div><i>→</i>
+                <div><b>02</b><span>Neuron Sensorik</span></div><i>→</i>
+                <div><b>03</b><span>Sumsum Tulang Belakang</span></div><i>→</i>
+                <div><b>04</b><span>Neuron Motorik</span></div><i>→</i>
+                <div><b>05</b><span>Efektor</span></div>
+              </div>
+            </div>
+            <figure class="media-card">
+              <img src="assets/images/spinal_full.webp" alt="Diagram jalur refleks saraf spinal" loading="lazy" />
+              <figcaption>Diagram jalur refleks spinal</figcaption>
+            </figure>
+          </article>
+
+          <article class="tab-panel" id="panel-cranial" data-panel="cranial" hidden>
+            <div class="tab-copy">
+              <span class="pill">BRAINSTEM</span>
+              <h3>Refleks Saraf Kranial</h3>
+              <p>Diproses langsung di <strong>batang otak</strong> (otak tengah, pons, dan medula oblongata) serta
+                mengontrol <strong>12 pasang saraf kranial</strong> pada area kepala, wajah, dan organ indra.</p>
+              <div class="step-stack">
+                <div><span>1</span>
+                  <p><b>Reseptor</b><small>Retina mata menangkap stimulus cahaya.</small></p>
+                </div>
+                <div><span>2</span>
+                  <p><b>Neuron sensorik</b><small>Optic Nerve / N. II membawa impuls ke batang otak.</small></p>
+                </div>
+                <div><span>3</span>
+                  <p><b>Pusat integrasi</b><small>Batang otak mengolah instruksi refleks.</small></p>
+                </div>
+                <div><span>4</span>
+                  <p><b>Neuron motorik</b><small>Third Cranial Nerve / N. III (Okulomotor).</small></p>
+                </div>
+                <div><span>5</span>
+                  <p><b>Efektor</b><small>Otot pupil mata; pupil mengecil otomatis.</small></p>
+                </div>
+              </div>
+            </div>
+            <figure class="media-card portrait">
+              <img src="assets/images/cranial_full.webp" alt="Diagram refleks pupil pada saraf kranial"
+                loading="lazy" />
+              <figcaption>Contoh refleks pupil pada jalur kranial</figcaption>
+            </figure>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-autonomic" id="otonom">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <div><span class="section-no">02</span><span class="eyebrow-label">Sistem Saraf Otonom</span></div>
+          <h2>Dua mode kerja tubuh yang saling menyeimbangkan.</h2>
+          <p>Simpatis mempersiapkan tubuh menghadapi stres atau situasi darurat, sedangkan parasimpatis mendominasi
+            ketika tubuh tenang dan beristirahat.</p>
+        </div>
+
+        <div class="autonomic-grid reveal">
+          <article class="mode-card sympathetic">
+            <div class="mode-icon">⚡</div>
+            <span class="mode-tag">FIGHT OR FLIGHT</span>
+            <h3>Sistem Saraf Simpatis</h3>
+            <p>Mendorong pemanfaatan energi secara cepat dengan memacu kinerja organ vital.</p>
+            <ul>
+              <li><span>↑</span> Denyut jantung meningkat</li>
+              <li><span>↑</span> Pernapasan meningkat</li>
+              <li><span>↓</span> Fungsi non-mendesak seperti pencernaan dihambat</li>
+            </ul>
+            <div class="mode-state"><span></span> Tubuh dalam kondisi siaga</div>
+          </article>
+
+          <figure class="autonomic-figure">
+            <img src="assets/images/autonomic_full.webp"
+              alt="Perbandingan fungsi simpatis dan parasimpatis pada organ tubuh" loading="lazy" />
+            <figcaption>Perbandingan efek sistem simpatis dan parasimpatis</figcaption>
+          </figure>
+
+          <article class="mode-card parasympathetic">
+            <div class="mode-icon">🌿</div>
+            <span class="mode-tag">REST AND DIGEST</span>
+            <h3>Sistem Saraf Parasimpatis</h3>
+            <p>Berfokus pada pemulihan dan pemeliharaan energi saat tubuh dalam keadaan tenang, aman, dan beristirahat.
+            </p>
+            <ul>
+              <li><span>↓</span> Laju kardiovaskular ditenangkan</li>
+              <li><span>↓</span> Pernapasan melambat</li>
+              <li><span>↑</span> Proses pencernaan kembali aktif</li>
+            </ul>
+            <div class="mode-state"><span></span> Tubuh dalam kondisi pemulihan</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-disorders" id="kelainan">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div><span class="section-no">03</span><span class="eyebrow-label">Kelainan Sistem Saraf</span></div>
+          <h2>Kenali gangguan yang memengaruhi fungsi saraf.</h2>
+          <p>Pilih kartu untuk melihat penjelasan lengkap dan ilustrasi tiap kondisi.</p>
+        </div>
+
+        <div class="disorder-grid">
+          <button class="disorder-card reveal" data-disorder="stroke" aria-haspopup="dialog">
+            <span class="disorder-number">01</span>
+            <div class="disorder-thumb"><img src="assets/images/stroke_full.webp"
+                alt="Ilustrasi stroke iskemik dan hemoragik" loading="lazy" /></div>
+            <div class="disorder-body"><span class="category">Gangguan aliran darah otak</span>
+              <h3>Stroke</h3>
+              <p>Gangguan fungsi otak akut akibat terhentinya pasokan darah ke otak.</p><span class="read-more">Pelajari
+                <b>↗</b></span>
+            </div>
+          </button>
+
+          <button class="disorder-card reveal" data-disorder="ms" aria-haspopup="dialog">
+            <span class="disorder-number">02</span>
+            <div class="disorder-thumb"><img src="assets/images/ms_full.webp"
+                alt="Ilustrasi kerusakan mielin pada Multiple Sclerosis" loading="lazy" /></div>
+            <div class="disorder-body"><span class="category">Autoimun sistem saraf pusat</span>
+              <h3>Multiple Sclerosis</h3>
+              <p>Kerusakan selubung mielin menghambat penghantaran impuls listrik saraf.</p><span
+                class="read-more">Pelajari <b>↗</b></span>
+            </div>
+          </button>
+
+          <button class="disorder-card reveal" data-disorder="bells" aria-haspopup="dialog">
+            <span class="disorder-number">03</span>
+            <div class="disorder-thumb"><img src="assets/images/bell_full.webp"
+                alt="Ilustrasi Bell's Palsy pada salah satu sisi wajah" loading="lazy" /></div>
+            <div class="disorder-body"><span class="category">Nervus Fasialis / Saraf Kranial VII</span>
+              <h3>Bell's Palsy</h3>
+              <p>Kelemahan atau kelumpuhan mendadak pada otot salah satu sisi wajah.</p><span class="read-more">Pelajari
+                <b>↗</b></span>
+            </div>
+          </button>
+
+          <button class="disorder-card reveal" data-disorder="parkinson" aria-haspopup="dialog">
+            <span class="disorder-number">04</span>
+            <div class="disorder-thumb"><img src="assets/images/parkinson_full.webp" alt="Ilustrasi penyakit Parkinson"
+                loading="lazy" /></div>
+            <div class="disorder-body"><span class="category">Gangguan degeneratif</span>
+              <h3>Parkinson</h3>
+              <p>Kemunduran sel saraf penghasil dopamin mengganggu kontrol gerakan tubuh.</p><span
+                class="read-more">Pelajari <b>↗</b></span>
+            </div>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section recap" id="ringkasan">
+      <div class="container recap-card reveal">
+        <div class="recap-copy">
+          <span class="eyebrow light">RINGKASAN BELAJAR</span>
+          <h2>Tiga ide utama untuk dibawa pulang.</h2>
+          <p>Gunakan ringkasan ini untuk mengingat kembali inti materi sebelum presentasi atau evaluasi.</p>
+        </div>
+        <div class="recap-points">
+          <div><span>01</span>
+            <p><b>Lengkung refleks</b> menghasilkan respons cepat dan otomatis melalui jalur spinal atau kranial.</p>
+          </div>
+          <div><span>02</span>
+            <p><b>Simpatis dan parasimpatis</b> bekerja dengan pola yang berbeda saat tubuh siaga versus beristirahat.
+            </p>
+          </div>
+          <div><span>03</span>
+            <p><b>Kelainan sistem saraf</b> yang dibahas meliputi Stroke, Multiple Sclerosis, Bell's Palsy, dan
+              Parkinson.</p>
+          </div>
+        </div>
+        <a class="btn btn-light" href="#top">Ulangi dari awal <span>↑</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div class="brand footer-brand">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48">
+            <path
+              d="M16 9c5-7 15-5 17 2 7-1 11 7 7 12 5 5 1 14-6 14-3 5-11 4-13 0-7 2-12-5-9-10-5-4-3-13 4-15-2-5 1-12 8-13Z" />
+            <path d="M24 7v34M15 16c5 0 9 3 9 8M33 14c-5 1-9 4-9 10M13 29c6-2 11 1 11 7M35 28c-7-2-11 2-11 8" />
+          </svg>
+        </span>
+        <span><strong>NeuroLearn</strong><small>Media pembelajaran sistem saraf</small></span>
+      </div>
+      <p>Materi disusun dari presentasi “Memahami Peran Sistem Saraf”.</p>
+    </div>
+  </footer>
+
+  <dialog class="modal" id="disorderModal">
+    <div class="modal-shell">
+      <button class="modal-close" id="modalClose" aria-label="Tutup">×</button>
+      <div class="modal-media"><img id="modalImage" src="" alt="" /></div>
+      <div class="modal-copy">
+        <span class="modal-kicker" id="modalKicker"></span>
+        <h2 id="modalTitle"></h2>
+        <p id="modalText"></p>
+        <div class="modal-note" id="modalNote"></div>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="assets/app.js"></script>
+</body>
+
+</html>
